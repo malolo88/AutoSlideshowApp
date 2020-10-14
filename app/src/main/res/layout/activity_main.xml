@@ -15,27 +15,36 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:adjustViewBounds="true" />
+        android:layout_height="400dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/startPause_button"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="10dp"
-        android:gravity="center">
+        android:layout_centerHorizontal="true"
+        android:text="再生/停止"
+        android:textSize="12sp" />
+
 
         <Button
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="戻る"
-            android:id="@+id/back_button"/>
+            android:layout_below="@+id/startPause_button"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_button"
+            android:textSize="12sp"/>
 
         <Button
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="進む"
-            android:id="@+id/next_button"/>
-    </LinearLayout>
+            android:layout_below="@+id/startPause_button"
+            android:layout_alignParentRight="true"
+            android:id="@+id/next_button"
+            android:textSize="12sp"/>
+
+
 
 </RelativeLayout>
